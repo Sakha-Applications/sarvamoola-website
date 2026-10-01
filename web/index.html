@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sarvamoola Foundation</title>
+  <meta name="description" content="Sarvamoola Foundation: the root behind KalyanaSakha and UdyogaSakha.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Young+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Sarvamoola Foundation, home">
+      <img src="favicon.svg" alt="" width="28" height="28">
+      <span>Sarvamoola</span>
+    </a>
+    <nav aria-label="Main">
+      <a href="#what-we-do">What we do</a>
+      <a href="#initiatives">Our initiatives</a>
+      <a href="#contact">Contact us</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <h1>Sarvamoola<br>Foundation</h1>
+      <p class="lede">
+        <!-- TODO: replace with the foundation's one-line mission -->
+        One-line statement of the foundation's purpose goes here.
+      </p>
+    </section>
+
+    <section class="what" id="what-we-do" aria-labelledby="what-title">
+      <h2 id="what-title">What we do</h2>
+      <div class="what-body">
+        <!-- TODO: replace with the foundation's real description -->
+        <p>
+          Placeholder: describe the foundation here. Who it serves, the problem it works on,
+          and why it exists. Two or three short paragraphs are plenty.
+        </p>
+        <p>
+          Placeholder: explain how the foundation's initiatives fit together under one roof.
+        </p>
+      </div>
+    </section>
+
+    <section class="initiatives" id="initiatives" aria-labelledby="init-title">
+      <h2 id="init-title">Our initiatives</h2>
+      <p class="init-intro">Two initiatives grow from the same root.</p>
+
+      <svg class="roots" viewBox="0 0 1000 140" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke">
+          <path pathLength="1" d="M500 0 C500 30 500 45 500 62" vector-effect="non-scaling-stroke"/>
+          <path pathLength="1" d="M500 62 C500 105 250 66 250 140" vector-effect="non-scaling-stroke"/>
+          <path pathLength="1" d="M500 62 C500 105 750 66 750 140" vector-effect="non-scaling-stroke"/>
+          <path pathLength="1" class="fine" d="M392 84 C360 100 340 94 318 124" vector-effect="non-scaling-stroke"/>
+          <path pathLength="1" class="fine" d="M608 84 C640 100 660 94 682 124" vector-effect="non-scaling-stroke"/>
+          <path pathLength="1" class="fine" d="M330 82 C300 78 286 96 280 112" vector-effect="non-scaling-stroke"/>
+          <path pathLength="1" class="fine" d="M670 82 C700 78 714 96 720 112" vector-effect="non-scaling-stroke"/>
+        </g>
+      </svg>
+
+      <div class="panels">
+        <article class="panel" id="kalyanasakha">
+          <h3>KalyanaSakha</h3>
+          <!-- TODO: replace with the KalyanaSakha introduction -->
+          <p>Placeholder: a two or three sentence introduction to KalyanaSakha and who it helps.</p>
+          <!-- TODO: replace href with the KalyanaSakha site URL -->
+          <a class="btn" href="#" rel="noopener">Visit KalyanaSakha</a>
+        </article>
+
+        <article class="panel" id="udyogasakha">
+          <h3>UdyogaSakha</h3>
+          <!-- TODO: replace with the real UdyogaSakha introduction -->
+          <p>Placeholder: a two or three sentence introduction to UdyogaSakha and who it helps.</p>
+          <!-- TODO: replace href with the UdyogaSakha site URL -->
+          <a class="btn" href="#" rel="noopener">Visit UdyogaSakha</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact-text">
+        <h2 id="contact-title">Contact us</h2>
+        <p>Questions, ideas or want to work with us? Write to
+          <a href="mailto:info@sarvamoola.in">info@sarvamoola.in</a>.</p>
+      </div>
+
+      <form id="contact-form" class="form" action="mailto:info@sarvamoola.in" method="post" enctype="text/plain">
+        <label>Your name
+          <input type="text" name="name" autocomplete="name" required>
+        </label>
+        <label>Your email
+          <input type="email" name="email" autocomplete="email" required>
+        </label>
+        <label>Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button class="btn" type="submit">Send email</button>
+        <p class="form-note">This opens your email app with the message ready to send.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year">2026</span> Sarvamoola Foundation</p>
+    <p><a href="mailto:info@sarvamoola.in">info@sarvamoola.in</a></p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

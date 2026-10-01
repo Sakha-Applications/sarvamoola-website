@@ -1,0 +1,17 @@
+{
+  "expo": {
+    "name": "Sarvamoola Foundation",
+    "slug": "sarvamoola-foundation",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#0e3b3a",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "in.sarvamoola.foundation"
+    },
+    "android": {
+      "package": "in.sarvamoola.foundation"
+    }
+  }
+}

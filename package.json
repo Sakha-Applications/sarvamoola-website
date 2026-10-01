@@ -1,0 +1,12 @@
+{
+  "name": "sarvamoola-foundation",
+  "private": true,
+  "description": "Sarvamoola Foundation: static website (web/) and Expo mobile app (mobile/)",
+  "scripts": {
+    "web": "npx serve web",
+    "mobile:install": "npm --prefix mobile install",
+    "mobile": "npm --prefix mobile run start",
+    "mobile:android": "npm --prefix mobile run android",
+    "mobile:ios": "npm --prefix mobile run ios"
+  }
+}
