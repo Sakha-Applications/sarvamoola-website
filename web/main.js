@@ -14,6 +14,42 @@ document.documentElement.classList.add('js');
   io.observe(roots);
 })();
 
+// Community carousel: prev/next buttons
+(function () {
+  var track = document.querySelector('.carousel');
+  var buttons = document.querySelectorAll('.car-btn');
+  if (!track || buttons.length < 2) {
+    console.warn('Carousel: track or buttons not found');
+    return;
+  }
+  var prev = buttons[0];
+  var next = buttons[1];
+
+  function step() {
+    var slide = track.querySelector('.slide');
+    if (!slide) return track.clientWidth;
+    var gap = parseFloat(getComputedStyle(track).columnGap) || 16;
+    return slide.getBoundingClientRect().width + gap;
+  }
+
+  function update() {
+    var maxScroll = track.scrollWidth - track.clientWidth;
+    prev.disabled = track.scrollLeft <= 2;
+    next.disabled = track.scrollLeft >= maxScroll - 2;
+  }
+
+  function move(dir) {
+    track.scrollTo({ left: track.scrollLeft + dir * step(), behavior: 'smooth' });
+  }
+
+  prev.addEventListener('click', function () { move(-1); });
+  next.addEventListener('click', function () { move(1); });
+  track.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', update);
+  window.addEventListener('load', update);   // re-check after images load
+  update();
+})();
+
 // Footer year
 var y = document.getElementById('year');
 if (y) y.textContent = new Date().getFullYear();

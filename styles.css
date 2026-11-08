@@ -49,12 +49,36 @@ p { margin: 0 0 1em; max-width: 62ch; }
 .site-header nav a:hover { border-bottom-color: var(--turmeric); }
 
 /* Hero */
-.hero { padding: clamp(4rem, 12vw, 9rem) var(--pad) clamp(3rem, 8vw, 6rem); }
-.hero h1 { font-size: clamp(3.2rem, 11vw, 8.5rem); letter-spacing: -0.02em; color: var(--teal); }
-.lede { margin-top: 1.75rem; font-size: clamp(1.15rem, 2vw, 1.4rem); color: var(--muted); max-width: 36ch; }
+.hero { 
+  background: var(--teal); color: #eef2ea;
+  padding: clamp(4rem, 12vw, 9rem) var(--pad) clamp(3rem, 8vw, 6rem); 
+}
+
+.hero h1 { 
+  background: var(--teal); color: #eef2ea;
+  font-size: clamp(3.2rem, 11vw, 8.5rem); letter-spacing: -0.02em; color: var(--teal); 
+}
+
+.lede { 
+  margin-top: 1.75rem; font-size: clamp(1.15rem, 2vw, 1.4rem); color: var(--muted); /*max-width: 36ch;*/ 
+}
 
 /* What we do */
 .what {
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 2rem 4rem;
+  padding: clamp(3rem, 7vw, 5.5rem) var(--pad);
+  border-top: 1px solid var(--line);
+}
+
+/* Our Mission */
+.mission {
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 2rem 4rem;
+  padding: clamp(3rem, 7vw, 5.5rem) var(--pad);
+  border-top: 1px solid var(--line);
+}
+
+/* Our Founder */
+.founder {
   display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 2rem 4rem;
   padding: clamp(3rem, 7vw, 5.5rem) var(--pad);
   border-top: 1px solid var(--line);
